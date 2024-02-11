@@ -1,0 +1,11 @@
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/src/spa/CMakeFiles/spa.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/src/spa/CMakeFiles/edit_cache.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/src/spa/CMakeFiles/rebuild_cache.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/src/autotester/CMakeFiles/autotester.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/src/autotester/CMakeFiles/edit_cache.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/src/autotester/CMakeFiles/rebuild_cache.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/src/unit_testing/CMakeFiles/unit_testing.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/src/unit_testing/CMakeFiles/edit_cache.dir
+/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug/src/unit_testing/CMakeFiles/rebuild_cache.dir

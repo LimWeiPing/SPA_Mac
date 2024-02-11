@@ -1,0 +1,25 @@
+# ninja log v5
+2	275	1707519126987876443	src/spa/CMakeFiles/spa.dir/src/QueryProcessor.cpp.o	789940fa6bb0b1e7
+2	265	1707518310895023668	src/spa/CMakeFiles/spa.dir/src/Database.cpp.o	d7102bddce53251
+2	316	1707518470094916799	src/spa/CMakeFiles/spa.dir/src/SourceProcessor.cpp.o	b22d7c84f19752b0
+367	2328	1707435942609231890	src/unit_testing/CMakeFiles/unit_testing.dir/src/main.cpp.o	79f11e249db9dc2f
+1	449	1707435940732641153	src/unit_testing/CMakeFiles/unit_testing.dir/src/TestDatabase.cpp.o	514ab1760b98a432
+1	396	1707435940681194853	src/spa/CMakeFiles/spa.dir/src/Tokenizer.cpp.o	d5edf4a894ff6b42
+3	592	1707493497507863579	src/autotester/CMakeFiles/autotester.dir/src/TestWrapper.cpp.o	996d960caa25c803
+275	299	1707519127015250000	src/spa/libspa.a	58320a5606d48740
+1	448	1707435940732543985	src/unit_testing/CMakeFiles/unit_testing.dir/src/TestTokenzier.cpp.o	4bb0eaae7fd83f50
+1	804	1707435941089469620	src/spa/CMakeFiles/spa.dir/src/sqlite3.c.o	ce7e113e535cef45
+299	333	1707519127047706432	src/autotester/autotester	77b8ca26c2316444
+2328	2367	1707435942653944882	src/unit_testing/unit_testing	a215dbe424109aad
+5	338	1707692382906305993	src/spa/CMakeFiles/spa.dir/src/QueryProcessor.cpp.o	2936f94f037f435
+4	355	1707692382922377281	src/spa/CMakeFiles/spa.dir/src/Database.cpp.o	15ab4e863a1fe67d
+5	361	1707692382930166196	src/spa/CMakeFiles/spa.dir/src/Tokenizer.cpp.o	11361ab81d8b6f8
+5	411	1707692382979507768	src/spa/CMakeFiles/spa.dir/src/SourceProcessor.cpp.o	93f97c6d565ee2b3
+6	423	1707692382991610390	src/unit_testing/CMakeFiles/unit_testing.dir/src/TestTokenzier.cpp.o	3f31787b1008f99b
+5	424	1707692382992788390	src/autotester/CMakeFiles/autotester.dir/src/TestWrapper.cpp.o	601f426333a43135
+6	425	1707692382994541223	src/unit_testing/CMakeFiles/unit_testing.dir/src/TestDatabase.cpp.o	4b4b026e0012b2d9
+5	809	1707692383377845221	src/spa/CMakeFiles/spa.dir/src/sqlite3.c.o	2242cb27a1b814e9
+809	902	1707692383474681000	src/spa/libspa.a	58320a5606d48740
+902	938	1707692383509360149	src/autotester/autotester	acb9868968288ddc
+338	2301	1707692384862603890	src/unit_testing/CMakeFiles/unit_testing.dir/src/main.cpp.o	f6ff131f52c0daa7
+2301	2344	1707692384915187045	src/unit_testing/unit_testing	a215dbe424109aad

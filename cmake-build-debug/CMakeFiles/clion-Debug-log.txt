@@ -1,0 +1,50 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A -B /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug
+-- The C compiler identification is AppleClang 15.0.0.15000100
+-- The CXX compiler identification is AppleClang 15.0.0.15000100
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug
+
+
+*********************
+
+DEBUG Build Type
+
+*********************
+
+
+CMake Warning (dev) at CMakeLists.txt:39 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable AUTOTESTER_ROOT is set to:
+
+    /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/lib/autotester/apple
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (AUTOTESTER)
+  does not match the name of the calling package (Autotester).  This can lead
+  to problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/FindAutotester.cmake:33 (find_package_handle_standard_args)
+  CMakeLists.txt:39 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found AUTOTESTER: debug;/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/lib/autotester/apple/debug/libautotester.a;optimized;/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/lib/autotester/apple/release/libautotester.a  
+-- Configuring done (5.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug
