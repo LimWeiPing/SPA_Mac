@@ -81,7 +81,7 @@ void Database::insertConstant(string constantValue) {
 }
 
 // method to get all the constants from the database
-void Database::getConstant(vector<string>& results) {
+void Database::getConstants(vector<string>& results) {
     // clear the existing results
     dbResults.clear();
 
@@ -105,7 +105,7 @@ void Database::insertVariable(string variableName) {
 }
 
 // method to get all the variables from the database
-void Database::getVariable(vector<string>& results) {
+void Database::getVariables(vector<string>& results) {
     // clear the existing results
     dbResults.clear();
 
@@ -129,7 +129,7 @@ void Database::insertStatement(int statementSequence, string statementType) {
 }
 
 // method to get all the Statement from the database
-void Database::getStatement(vector<string>& results) {
+void Database::getStatements(vector<string>& results) {
     // clear the existing results
     dbResults.clear();
 
@@ -147,7 +147,7 @@ void Database::getStatement(vector<string>& results) {
 }
 
 // method to get all the assignStatement from the database
-void Database::getAssignStatement(vector<string>& results) {
+void Database::getAssignStatements(vector<string>& results) {
     // clear the existing results
     dbResults.clear();
 
@@ -165,7 +165,7 @@ void Database::getAssignStatement(vector<string>& results) {
 }
 
 // method to get all the printStatement from the database
-void Database::getPrintStatement(vector<string>& results) {
+void Database::getPrintStatements(vector<string>& results) {
     // clear the existing results
     dbResults.clear();
 
@@ -183,7 +183,7 @@ void Database::getPrintStatement(vector<string>& results) {
 }
 
 // method to get all the readStatement from the database
-void Database::getReadStatement(vector<string>& results) {
+void Database::getReadStatements(vector<string>& results) {
     // clear the existing results
     dbResults.clear();
 

@@ -34,27 +34,27 @@ void QueryProcessor::evaluate(string query, vector<string>& output) {
 	}
 
     if (synonymType == "constant") {
-        Database::getConstant(databaseResults);
+        Database::getConstants(databaseResults);
     }
 
     if (synonymType == "variable") {
-        Database::getVariable(databaseResults);
+        Database::getVariables(databaseResults);
     }
 
     if (synonymType == "stmt") {
-        Database::getStatement(databaseResults);
+        Database::getStatements(databaseResults);
     }
 
     if (synonymType == "assign") {
-        Database::getAssignStatement(databaseResults);
+        Database::getAssignStatements(databaseResults);
     }
 
     if (synonymType == "print") {
-        Database::getPrintStatement(databaseResults);
+        Database::getPrintStatements(databaseResults);
     }
 
     if (synonymType == "read") {
-        Database::getReadStatement(databaseResults);
+        Database::getReadStatements(databaseResults);
     }
 
 	// post process the results to fill in the output vector

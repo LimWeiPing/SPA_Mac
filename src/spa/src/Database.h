@@ -26,28 +26,28 @@ public:
     static void insertConstant(string constant);
 
     // method to get all the constants from the database
-    static void getConstant(vector<string>& results);
+    static void getConstants(vector<string>& results);
 
     // method to insert a variable into the database
     static void insertVariable(string constant);
 
     // method to get all the variables from the database
-    static void getVariable(vector<string>& results);
+    static void getVariables(vector<string>& results);
 
     // method to insert a statements into the database
     static void insertStatement(int statementSequence, string statementType);
 
     // method to get all the assignStatement from the database
-    static void getStatement(vector<string>& results);
+    static void getStatements(vector<string>& results);
 
     // method to get all the assignStatement from the database
-    static void getAssignStatement(vector<string>& results);
+    static void getAssignStatements(vector<string>& results);
 
     // method to get all the printStatement from the database
-    static void getPrintStatement(vector<string>& results);
+    static void getPrintStatements(vector<string>& results);
 
     // method to get all the readStatement from the database
-    static void getReadStatement(vector<string>& results);
+    static void getReadStatements(vector<string>& results);
 
 private:
 	// the connection pointer to the database

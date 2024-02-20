@@ -1,0 +1,57 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>autotester</name><parsing_time_taken>17.180000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Procedure">1</id><querystr><![CDATA[procedure p; Select p]]></querystr>
+<stuans>math</stuans>
+<correct>math</correct>
+<time_taken>0.758000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Variable">2</id><querystr><![CDATA[variable v; Select v]]></querystr>
+<stuans>num1,num2,add,minus,divide,multiply,num3</stuans>
+<correct>num1,num2,add,minus,divide,multiply,num3</correct>
+<time_taken>0.510000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Constant">3</id><querystr><![CDATA[constant c; Select c]]></querystr>
+<stuans>123</stuans>
+<correct>123</correct>
+<time_taken>0.624000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Assignment">4</id><querystr><![CDATA[assign a; Select a]]></querystr>
+<stuans>3,4,5,6,7</stuans>
+<correct>3,4,5,6,7</correct>
+<time_taken>0.544000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Print">5</id><querystr><![CDATA[print pr; Select pr]]></querystr>
+<stuans>8,9,10,11,12</stuans>
+<correct>8,9,10,11,12</correct>
+<time_taken>0.875000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Read">6</id><querystr><![CDATA[read rd; Select rd]]></querystr>
+<stuans>1,2</stuans>
+<correct>1,2</correct>
+<time_taken>0.490000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" CondNum="1" RelNum="0" comment="Statement">7</id><querystr><![CDATA[stmt s; Select s]]></querystr>
+<stuans>1,2,3,4,5,6,7,8,9,10,11,12</stuans>
+<correct>1,2,3,4,5,6,7,8,9,10,11,12</correct>
+<time_taken>0.629000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

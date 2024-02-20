@@ -20,3 +20,9 @@
 3	352	1708438572450778778	src/unit_testing/CMakeFiles/unit_testing.dir/src/TestTokenzier.cpp.o	3f31787b1008f99b
 3	1979	1708438574074122853	src/unit_testing/CMakeFiles/unit_testing.dir/src/main.cpp.o	f6ff131f52c0daa7
 1979	2026	1708438574125582600	src/unit_testing/unit_testing	a215dbe424109aad
+4	3491	1708441663750910429	src/spa/CMakeFiles/spa.dir/src/QueryProcessor.cpp.o	2936f94f037f435
+3	3507	1708441663769563513	src/spa/CMakeFiles/spa.dir/src/Database.cpp.o	15ab4e863a1fe67d
+4	3566	1708441663828514369	src/spa/CMakeFiles/spa.dir/src/SourceProcessor.cpp.o	93f97c6d565ee2b3
+5	3578	1708441663840656659	src/autotester/CMakeFiles/autotester.dir/src/TestWrapper.cpp.o	601f426333a43135
+3566	3667	1708441663933525000	src/spa/libspa.a	58320a5606d48740
+3667	5724	1708441665987109589	src/autotester/autotester	acb9868968288ddc
