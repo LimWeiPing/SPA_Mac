@@ -1,16 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A -B /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug
--- The C compiler identification is AppleClang 15.0.0.15000100
--- The CXX compiler identification is AppleClang 15.0.0.15000100
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug
 
 
@@ -44,7 +32,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:39 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found AUTOTESTER: debug;/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/lib/autotester/apple/debug/libautotester.a;optimized;/Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/lib/autotester/apple/release/libautotester.a  
--- Configuring done (5.6s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/weipinglim/Desktop/MAC_M1_StartupSPASolution/A0227157A_A0227000A/Code-A0227157A_A0227000A/cmake-build-debug
