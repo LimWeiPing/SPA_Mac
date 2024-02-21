@@ -49,6 +49,10 @@ public:
     // method to get all the readStatement from the database
     static void getReadStatements(vector<string>& results);
 
+    // method to insert an assign into the database
+    static void insertAssign(int statementSequence, string LHS, string RHS);
+
+
 private:
 	// the connection pointer to the database
 	static sqlite3* dbConnection; 

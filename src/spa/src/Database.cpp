@@ -41,6 +41,14 @@ void Database::initialize() {
     string createStatementTableSQL = "CREATE TABLE statements ( statementSequence int PRIMARY KEY, statementType VARCHAR(255));";
     sqlite3_exec(dbConnection, createStatementTableSQL.c_str(), NULL, 0, &errorMessage);
 
+    // drop the existing assign table (if any)
+    string dropAssignTableSQL = "DROP TABLE IF EXISTS assigns";
+    sqlite3_exec(dbConnection, dropAssignTableSQL.c_str(), NULL, 0, &errorMessage);
+
+    // create an assigns table
+    string createAssignTableSQL = "CREATE TABLE assigns ( statementSequence int PRIMARY KEY, LHS VARCHAR(255), RHS VARCHAR(255));";
+    sqlite3_exec(dbConnection, createAssignTableSQL.c_str(), NULL, 0, &errorMessage);
+
     // initialize the result vector
 	dbResults = vector<vector<string>>();
 }
@@ -198,6 +206,12 @@ void Database::getReadStatements(vector<string>& results) {
         result = dbRow.at(0);
         results.push_back(result);
     }
+}
+
+// method to insert an assign into the database
+void Database::insertAssign(int statementSequence, string LHS, string RHS) {
+    string insertAssignSQL = "INSERT INTO assigns ('statementSequence', 'LHS', 'RHS') VALUES ('" + to_string(statementSequence) + "' , '" + LHS + "', '" + RHS + "');";
+    sqlite3_exec(dbConnection, insertAssignSQL.c_str(), NULL, 0, &errorMessage);
 }
 
 // callback method to put one row of results from the database into the dbResults vector

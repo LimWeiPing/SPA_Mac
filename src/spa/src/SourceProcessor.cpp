@@ -48,6 +48,18 @@ void SourceProcessor::process(string program) {
 
         if (currentToken == "=") {
             string statementType = "assign";
+            string LHS, RHS;
+
+            if (i > 1) {
+                LHS = tokens.at(i-1);
+            }
+
+            int exprID = i + 1;
+            while (tokens.at(exprID) != ";") {
+                RHS += tokens.at(exprID);
+                exprID++;
+            }
+            Database::insertAssign(currentStatement, LHS, RHS);
             Database::insertStatement(currentStatement, statementType);
             continue;
         }

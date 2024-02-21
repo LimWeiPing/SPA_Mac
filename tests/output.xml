@@ -1,57 +1,73 @@
 <?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
 <test_results>
 <info>
-<name>tests</name><parsing_time_taken>12.695000</parsing_time_taken>
+<name>tests</name><parsing_time_taken>17.788000</parsing_time_taken>
 </info>
 <queries>
 <query>
 <id ReturnTuple="1" CondNum="1" RelNum="0" comment="Procedure">1</id><querystr><![CDATA[procedure p; Select p]]></querystr>
 <stuans>main,readPoint,printResults,computeCentroid</stuans>
 <correct>main,readPoint,printResults,computeCentroid</correct>
-<time_taken>0.365000</time_taken>
+<time_taken>0.535000</time_taken>
 <passed/>
 </query>
 <query>
 <id ReturnTuple="1" CondNum="1" RelNum="0" comment="Variable">2</id><querystr><![CDATA[variable v; Select v]]></querystr>
 <stuans>flag,x,y,cenX,cenY,normSq,count</stuans>
 <correct>flag,x,y,cenX,cenY,normSq,count</correct>
-<time_taken>0.280000</time_taken>
+<time_taken>0.398000</time_taken>
 <passed/>
 </query>
 <query>
 <id ReturnTuple="1" CondNum="1" RelNum="0" comment="Constant">3</id><querystr><![CDATA[constant c; Select c]]></querystr>
 <stuans>0,1</stuans>
 <correct>0,1</correct>
-<time_taken>0.249000</time_taken>
+<time_taken>0.363000</time_taken>
 <passed/>
 </query>
 <query>
 <id ReturnTuple="1" CondNum="1" RelNum="0" comment="Assignment">4</id><querystr><![CDATA[assign a; Select a]]></querystr>
 <stuans>1,10,11,12,15,16,17,20,21,22,23</stuans>
 <correct>1,10,11,12,15,16,17,20,21,22,23</correct>
-<time_taken>0.286000</time_taken>
+<time_taken>0.272000</time_taken>
 <passed/>
 </query>
 <query>
 <id ReturnTuple="1" CondNum="1" RelNum="0" comment="Print">5</id><querystr><![CDATA[print pr; Select pr]]></querystr>
 <stuans>6,7,8,9</stuans>
 <correct>6,7,8,9</correct>
-<time_taken>0.263000</time_taken>
+<time_taken>0.286000</time_taken>
 <passed/>
 </query>
 <query>
 <id ReturnTuple="1" CondNum="1" RelNum="0" comment="Read">6</id><querystr><![CDATA[read rd; Select rd]]></querystr>
 <stuans>4,5</stuans>
 <correct>4,5</correct>
-<time_taken>0.247000</time_taken>
+<time_taken>0.323000</time_taken>
 <passed/>
 </query>
 <query>
 <id ReturnTuple="1" CondNum="1" RelNum="0" comment="Statement">7</id><querystr><![CDATA[stmt s; Select s]]></querystr>
 <stuans>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</stuans>
 <correct>1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23</correct>
-<time_taken>0.280000</time_taken>
+<time_taken>0.336000</time_taken>
 <passed/>
+</query>
+<query>
+<id ReturnTuple="1" Modifies="1" SuchThat="1" CondNum="3" RelNum="1" comment="Modifies">8</id><querystr><![CDATA[variable v; Select v such that Modifies (1, v)]]></querystr>
+<stuans>flag,x,y,cenX,cenY,normSq,count</stuans>
+<correct>flag</correct>
+<time_taken>0.280000</time_taken>
+<failed>
+<missing></missing>
+<additional>cenX,cenY,count,normSq,x,y</additional>
+<summary>
+<expected>1</expected>
+<matched>1</matched>
+<missing>0</missing>
+<additional>6</additional>
+</summary>
+</failed>
 </query>
 </queries>
 </test_results>
