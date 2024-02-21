@@ -13,27 +13,29 @@ void SourceProcessor::process(string program) {
 	vector<string> tokens;
 	tk.tokenize(program, tokens);
 
-	// This logic is highly simplified based on iteration 1 requirements and 
-	// the assumption that the programs are valid.
-	string procedureName = tokens.at(1);
+    int currentStatement = 1;
 
-	// insert the procedure into the database
-	Database::insertProcedure(procedureName);
-
-    int currentStatement = 0;
-
-    for (int i = 2; i < tokens.size(); i++) {
+    for (int i = 0; i < tokens.size(); i++) {
         string currentToken;
         currentToken = tokens.at(i);
         char firstCharacter = currentToken.at(0);
 
         // iterate through the stmtLst and increase the StatementSequence
-        if ((currentToken == "{") && (i >= 2) && (tokens.at(i - 2) == "procedure")) {
+        if ((currentToken) == "{") {
             currentStatement += 1;
             continue;
         }
-        if (currentToken == ";") {
+        if ((currentToken == ";")) {
             currentStatement += 1;
+            continue;
+        }
+
+        if (currentToken == "procedure") {
+            //procedure not consider a statement
+            currentStatement -= 1;
+            string procedureName = tokens.at(i+1);
+            Database::insertProcedure(procedureName);
+            i++;
             continue;
         }
 
@@ -62,7 +64,36 @@ void SourceProcessor::process(string program) {
             continue;
         }
 
-        if (isalpha(firstCharacter) && (i > 1) && (tokens.at(i - 1) != "procedure")){
+        if (currentToken == "while") {
+            string statementType = "while";
+            Database::insertStatement(currentStatement, statementType);
+            continue;
+        }
+
+        if (currentToken == "if") {
+            string statementType = "if";
+            Database::insertStatement(currentStatement, statementType);
+            continue;
+        }
+
+        if (currentToken == "then") {
+            continue;
+        }
+
+        if (currentToken == "else") {
+            // else not consider a statement
+            currentStatement -= 1;
+            continue;
+        }
+
+        if (currentToken == "call") {
+            string statementType = "call";
+            Database::insertStatement(currentStatement, statementType);
+            i++;
+            continue;
+        }
+
+        if (isalpha(firstCharacter)){
             Database::insertVariable(currentToken);
         }
 
